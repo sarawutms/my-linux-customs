@@ -1,0 +1,14 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Editor backup & swap files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local custom files / secrets
+*.local
+.env

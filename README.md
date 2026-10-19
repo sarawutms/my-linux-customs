@@ -27,7 +27,6 @@
 | **Starship** | `starship` | Prompt ยุคใหม่ที่รวดเร็ว ปรับแต่งได้ยืดหยุ่น รองรับ Git integration ในตัว |
 | **Fastfetch** | `fastfetch` | แสดงข้อมูลสเปกเครื่อง OS และ Kernel แบบสวยงามและรวดเร็วสุดๆ (ทางเลือกใหม่แทน neofetch) |
 | **Btop** | `btop` | ตัวมอนิเตอร์ CPU, RAM, Disk, Network และ Process แบบ UI สวยงามและ Interactive |
-| **Htop** | `htop` | Process viewer คลาสสิก น้ำหนักเบา สำหรับดูและจัดการ Process ในระบบ |
 | **Fzf** | `fzf` | Command-line Fuzzy Finder สำหรับค้นหาไฟล์และประวัติคำสั่งได้อย่างรวดเร็ว |
 | **Zoxide** | `z` | เครื่องมือช่วยเปลี่ยนโฟลเดอร์อัจฉริยะ (Smarter `cd` command) จำไดเรกทอรีที่ใช้บ่อย |
 | **Tree** | `tree` | แสดงโครงสร้างไฟล์และไดเรกทอรีในรูปแบบแผนภูมิต้นไม้ |
