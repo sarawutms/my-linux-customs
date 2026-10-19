@@ -113,3 +113,7 @@ if ! shopt -oq posix; then
 fi
 alias ll='ls -alF --color=auto'
 eval "$(starship init bash)"
+
+
+# Added by Antigravity CLI installer
+export PATH="$HOME/.local/bin:$PATH"
