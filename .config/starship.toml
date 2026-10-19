@@ -1,0 +1,42 @@
+# ==========================================
+# 1. การจัดเรียง (Format) - แบ่งเป็น 2 บรรทัด
+# ==========================================
+format = """
+$directory$git_branch$git_status$cmd_duration
+$character"""
+
+# เว้นบรรทัดใหม่เสมอเมื่อรันคำสั่งเสร็จ เพื่อไม่ให้หน้าจอชิดกันเกินไป
+add_newline = true
+
+# ==========================================
+# 2. ปรับแต่งแต่ละส่วนประกอบ (Modules)
+# ==========================================
+
+# โฟลเดอร์ปัจจุบัน (Directory)
+[directory]
+style = "bold cyan"
+format = "[📂 $path ]($style)"
+truncation_length = 3           # โชว์ความลึกโฟลเดอร์แค่ 3 ชั้น
+truncate_to_repo = false        # โชว์ path เต็มแม้จะอยู่ใน Git
+
+# ชื่อ Branch ของ Git (จะโชว์เมื่อเข้าโฟลเดอร์โปรเจกต์)
+[git_branch]
+symbol = "🌱 "
+style = "bold purple"
+format = "[$symbol$branch ]($style)"
+
+# สถานะของ Git (ไฟล์ถูกแก้, เพิ่ม, ลบ)
+[git_status]
+style = "bold red"
+format = '([$all_status$ahead_behind]($style) )'
+
+# จับเวลา (จะโชว์ไอคอนนาฬิกาก็ต่อเมื่อคำสั่งนั้นรันนานเกิน 2 วินาที)
+[cmd_duration]
+min_time = 2000
+style = "bold yellow"
+format = "[⏱ $duration]($style)"
+
+# สัญลักษณ์รอรับคำสั่ง (Character)
+[character]
+success_symbol = "[❯❯](bold green)"
+error_symbol = "[✗](bold red)"
